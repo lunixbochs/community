@@ -1,0 +1,3 @@
+symbol_map = {
+    'colon': ':',
+}
