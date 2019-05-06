@@ -1,4 +1,4 @@
-from talon import Context, actions
+from talon import Module, Context, actions
 
 key = actions.key
 self = actions.self
