@@ -12,7 +12,7 @@ class AppActions:
 
 @ctx.action_class('browser')
 class BrowserActions:
-    def focus_url():           key('cmd-l')
+    def focus_address():       key('cmd-l')
     def reload():              key('cmd-r')
     def reload_hard():         key('cmd-shift-r')
     def open_private_window(): key('cmd-shift-n')
