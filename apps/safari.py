@@ -26,4 +26,3 @@ class BrowserActions:
                 search_box = win.children.find(AXIdentifier='WEB_BROWSER_ADDRESS_AND_SEARCH_FIELD')
             url = search_box[0].AXValue
             return url
-
