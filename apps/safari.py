@@ -21,8 +21,9 @@ class BrowserActions:
     def address():
         win = ui.active_window()
         if win:
-            search_box = win.children.find(AXRole='AXStaticText', AXDescription='Address and Search')
-            if not search_box:
-                search_box = win.children.find(AXIdentifier='WEB_BROWSER_ADDRESS_AND_SEARCH_FIELD')
-            url = search_box[0].AXValue
+            search_box = win.children.find_one(
+                {'AXRole': 'AXStaticText', 'AXDescription': 'Address and Search'},
+                {'AXIdentifier': 'WEB_BROWSER_ADDRESS_AND_SEARCH_FIELD'},
+            )
+            url = search_box.AXValue
             return url

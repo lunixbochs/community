@@ -21,7 +21,7 @@ class BrowserActions:
     def address():
         win = ui.active_window()
         if win:
-            url = win.children.find(AXRole="AXTextField")[0].AXValue
+            url = win.children.find_one(AXRole="AXTextField").AXValue
             if not '://' in url:
                 if url.startswith('/'):
                     return 'file://' + url
