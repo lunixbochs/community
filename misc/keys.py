@@ -76,12 +76,12 @@ ctx.lists['self.symbol'] = {
     'dollar': '$', 'dollar sign': '$',
     'down score': '_', 'under score': '_',
     'colon': ':',
-    'paren': '(', 'left paren': '(',
-    'rparen': ')', 'are paren': ')', 'right paren': ')',
+    'paren': '(', 'L paren': '(', 'left paren': '(',
+    'R paren': ')', 'right paren': ')',
     'brace': '{', 'left brace': '{',
-    'rbrace': '}', 'are brace': '}', 'right brace': '}',
+    'R brace': '}', 'right brace': '}',
     'angle': '<', 'left angle': '<', 'less than': '<',
-    'rangle': '>', 'are angle': '>', 'right angle': '>', 'greater than': '>',
+    'rangle': '>', 'R angle': '>', 'right angle': '>', 'greater than': '>',
     'star': '*', 'asterisk': '*',
     'pound': '#', 'hash': '#', 'hash sign': '#', 'number sign': '#',
     'percent': '%', 'percent sign': '%',
@@ -91,7 +91,6 @@ ctx.lists['self.symbol'] = {
     'pipe': '|',
     'dubquote': '"', 'double quote': '"',
 }
-
 
 ctx.lists['self.number'] = dict(zip(default_digits, numbers))
 ctx.lists['self.arrow'] = {
