@@ -22,7 +22,7 @@ class Actions:
                 time.sleep(0.01)
             time.sleep(0.05)
 
-    def launch_app(path: str):
+    def launch(path: str):
         """Launch a new application by path"""
         ui.launch(path=path)
 
@@ -30,7 +30,7 @@ class Actions:
 ctx = Context()
 ctx.commands = {
     'focus {self.running}': lambda m: actions.self.focus(m.running),
-    'launch {self.launch}': lambda m: actions.selef.launch(m.launch),
+    'launch {self.launch}': lambda m: actions.self.launch(m.launch),
 }
 
 def update_lists():
